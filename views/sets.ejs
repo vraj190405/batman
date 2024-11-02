@@ -1,0 +1,98 @@
+<%- include('partials/navbar', { page: '/lego/sets' }) %>
+    <div class="hero">
+        <h1 class="text-4xl font-extrabold">Collection of Lego Sets</h1>
+        <p class="mt-2">Browse our collection by theme and year</p>
+    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lego Sets Collection</title>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            /* Add your custom styles here */
+            
+            .hero {
+                background: linear-gradient(to right, #4f46e5, #ec4899);
+                color: white;
+                padding: 2rem;
+                text-align: center;
+            }
+            
+            table {
+                width: 100%;
+                border-collapse: collapse;
+                margin: 20px 0;
+                font-size: 1em;
+                text-align: left;
+            }
+            
+            th,
+            td {
+                padding: 12px;
+                border: 1px solid #ddd;
+            }
+            
+            th {
+                background-color: #f2f2f2;
+            }
+            
+            tr:hover {
+                background-color: #f5f5f5;
+            }
+        </style>
+    </head>
+
+    <body class="bg-gray-100">
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1 class="text-4xl font-extrabold">Collection of Lego Sets</h1>
+            <p class="mt-2">Browse our collection by theme and year</p>
+        </div>
+
+        <!-- Table of Lego Sets -->
+        <div class="container mx-auto px-4 py-8">
+            <table class="min-w-full bg-white shadow-md rounded">
+                <thead>
+                    <tr>
+                        <th class="py-2">Image</th>
+                        <th class="py-2">Name</th>
+                        <th class="py-2">Theme</th>
+                        <th class="py-2">Year</th>
+                        <th class="py-2">Number of Parts</th>
+                        <th class="py-2">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% sets.forEach(set => { %>
+                        <tr>
+                            <td class="py-2">
+                                <img src="<%= set.img_url %>" alt="<%= set.name %>" class="h-16">
+                            </td>
+                            <td class="py-2">
+                                <%= set.name %>
+                            </td>
+                            <td class="py-2">
+                                <a href="/lego/sets?theme=<%= set.theme.toLowerCase() %>" class="bg-blue-500 text-white px-2 py-1 rounded hover:bg-blue-400">
+                                    <%= set.theme %>
+                                </a>
+                            </td>
+                            <td class="py-2">
+                                <%= set.year %>
+                            </td>
+                            <td class="py-2">
+                                <%= set.num_parts %>
+                            </td>
+                            <td class="py-2">
+                                <a href="/lego/sets/<%= set.set_num %>" class="bg-green-500 text-white px-2 py-1 rounded hover:bg-green-400">Details</a>
+                            </td>
+                        </tr>
+                        <% }); %>
+                </tbody>
+            </table>
+        </div>
+    </body>
+
+    </html>

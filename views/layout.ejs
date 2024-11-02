@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lego
+    </title>
+    <!-- Set the title dynamically -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- Link your CSS file -->
+</head>
+
+<body class="bg-gray-100">
+    <nav class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-4xl text-white font-extrabold">Lego World</a>
+            <div class="flex items-center space-x-8">
+                <a class="<%= (page == '/') ? 'active' : '' %>" href="/" class="text-lg text-white hover:text-gray-200 transition duration-300">Home</a>
+                <li><a class="<%= (page == '/lego/sets') ? 'active' : '' %>" href="/lego/sets" class="text-lg text-white hover:text-gray-200 transition duration-300">View Collection</a></li>
+                <a class="<%= (page == '/about') ? 'active' : '' %>" href="/about" class="text-lg text-white hover:text-gray-200 transition duration-300">About</a>
+            </div>
+        </div>
+    </nav>
+
+</body>
+
+</html>

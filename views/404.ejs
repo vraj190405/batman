@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Not Found</title>
+    <link href="/css/main.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-blue-600 p-4">
+        <div class="container mx-auto">
+            <a href="/" class="text-2xl text-white font-bold">Lego Collection</a>
+        </div>
+    </nav>
+
+    <!-- 404 Hero Section -->
+    <div class="hero bg-cover bg-center h-64" style="background-image: url('https://images.unsplash.com/photo-1601986063163-c82f6cf117e2');">
+        <div class="hero-overlay bg-opacity-60"></div>
+        <div class="text-center hero-content text-white">
+            <h1 class="text-5xl font-bold">404 - Page Not Found</h1>
+            <p class="text-xl">
+                <%= message %>
+            </p>
+        </div>
+    </div>
+
+    <div class="text-center mt-6">
+        <a href="/" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-400">Go to Home</a>
+    </div>
+</body>
+
+</html>

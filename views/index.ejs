@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Lego
+    </title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="/css/main.css" rel="stylesheet">
+    <!-- Link to your main CSS -->
+</head>
+
+<body class="bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 p-4 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/" class="text-4xl text-white font-extrabold">Lego World</a>
+            <div class="flex items-center space-x-8">
+                <a href="/" class="text-lg text-white hover:text-gray-200 transition duration-300">Home</a>
+                <a href="/about" class="text-lg text-white hover:text-gray-200 transition duration-300">About</a>
+                <div class="relative group inline-block">
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero bg-cover bg-center h-80 relative" style="background-image: url('https://www.lego.com/cdn/cs/set/assets/blt3788b3daacc67dd4/06_Sidekick-Tall.jpg?fit=crop&format=jpg&quality=80&width=800&height=600&dpr=1');">
+        <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+            <div class="text-center text-white hero-content">
+                <h1 class="text-6xl font-extrabold">Explore the World of Lego</h1>
+                <p class="text-xl mt-4">Browse through our amazing collection of Lego sets</p>
+                <a href="https://www.lego.com/en-in/exploretheworld?age-gate=grown_up" class="mt-6 inline-block bg-blue-500 text-white py-2 px-6 rounded-lg shadow-lg hover:bg-blue-400 transition duration-300">View Lego Sets</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Card Grid Layout -->
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10 py-12 px-4">
+        <!-- Card 1 -->
+        <div class="card bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden">
+            <img src="https://m.media-amazon.com/images/I/612bfWk+zpL._AC_UF1000,1000_QL80_.jpg" class="h-48 w-full object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold">Technic Monster Truck</h2>
+                <p class="text-gray-600 mt-2">A high-powered monster truck set for advanced builders.</p>
+                <a href="https://www.amazon.ca/LEGO-Technic-Monster-Dragon-Birthday/dp/B0BBWHWNTN" class="inline-block mt-4 bg-purple-500 text-white py-2 px-4 rounded-lg hover:bg-purple-400 transition duration-300">View Set</a>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden">
+            <img src="https://toycra.com/cdn/shop/products/Lego-60320-City-Fire-Fire-Station-Construction-Lego-Toycra_1024x1024.jpg?v=1681466299" class="h-48 w-full object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold">City Fire Station</h2>
+                <p class="text-gray-600 mt-2">Keep the city safe with this fire station set.</p>
+                <a href="https://www.amazon.ca/LEGO-Station-Building-Adventures-Characters/dp/B09FM4S5PY" class="inline-block mt-4 bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-400 transition duration-300">View Set</a>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card bg-white rounded-lg shadow-lg hover:shadow-xl transition-transform transform hover:scale-105 overflow-hidden">
+            <img src="https://m.media-amazon.com/images/I/81gtNBO344L._AC_SL1500_.jpg" class="h-48 w-full object-cover">
+            <div class="p-6">
+                <h2 class="text-2xl font-semibold">Space Rocket</h2>
+                <p class="text-gray-600 mt-2">Blast off with this advanced space exploration rocket.</p>
+                <a href="https://www.amazon.ca/LEGO-Friends-Science-Mini-Dolls-Spaceship/dp/B0CGY8CS78" class="inline-block mt-4 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-400 transition duration-300">View Set</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
